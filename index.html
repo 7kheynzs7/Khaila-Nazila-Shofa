@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI;
+}
+
+body{
+background:#f5f7fa;
+}
+
+header{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+nav{
+background:#1e293b;
+display:flex;
+justify-content:center;
+gap:20px;
+padding:12px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+transform:scale(1.1);
+}
+
+.container{
+width:90%;
+max-width:1000px;
+margin:auto;
+background:white;
+margin-top:25px;
+padding:25px;
+border-radius:12px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.card{
+background:#f1f5f9;
+padding:20px;
+margin:10px 0;
+border-radius:10px;
+}
+
+footer{
+margin-top:30px;
+background:#0f172a;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+.dark{
+background:#020617;
+color:white;
+}
+
+.dark .container{
+background:#0f172a;
+}
+
+button{
+padding:8px 12px;
+margin-top:10px;
+cursor:pointer;
+}
+</style>
+
+<script>
+function darkMode(){
+document.body.classList.toggle("dark");
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+<h1>Website Profesional</h1>
+<button onclick="darkMode()">🌙 Dark Mode</button>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="biodata.html">Biodata</a>
+<a href="galeri-foto.html">Galeri Foto</a>
+<a href="galeri-video.html">Galeri Video</a>
+</nav>
+
+<div class="container">
+
+<div class="card">
+<h2>Selamat Datang</h2>
+<p>Website versi PRO dengan CSS langsung di HTML.</p>
+</div>
+
+<div class="card">
+<h3>Fitur</h3>
+<ul>
+<li>Responsive</li>
+<li>Dark Mode</li>
+<li>Desain Modern</li>
+<li>Siap GitHub</li>
+</ul>
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 Website Pro</p>
+</footer>
+
+</body>
+</html>
